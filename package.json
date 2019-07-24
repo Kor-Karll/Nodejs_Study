@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_study",
+  "version": "1.0.0",
+  "description": "server side javascript tutorials",
+  "main": "app.js",
+  "dependencies": {
+    "uglify-js": "^3.6.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kor-Karll/Nodejs_Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kor-Karll/Nodejs_Study/issues"
+  },
+  "homepage": "https://github.com/Kor-Karll/Nodejs_Study#readme"
+}
