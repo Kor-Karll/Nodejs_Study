@@ -4,6 +4,7 @@
   "description": "server side javascript tutorials",
   "main": "app.js",
   "dependencies": {
+    "express": "^4.17.1",
     "uglify-js": "^3.6.0",
     "underscore": "^1.9.1"
   },
