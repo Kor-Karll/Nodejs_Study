@@ -16,6 +16,23 @@ app.get('/', (req,res)=>{
     res.send('Hello home page');
 });
 
+app.get('/topic',(req,res)=>{
+    var senddata_id = req.query.id
+    var topics = [
+        'Javascript is...',
+        'Nodejs is...',
+        'Express is...',
+    ];
+    var output = `
+        <a href='/topic?id=0'>Javascript</a><br>
+        <a href='/topic?id=1'>Nodejs</a><br>
+        <a href='/topic?id=2'>Express</a><br><br>
+        ${senddata_id}
+    `;
+    
+    res.send(output);
+});
+
 app.get('/dynamic', (req,res)=>{
     var lis = '';
     for(var i =0 ; i < 5 ; i++)
