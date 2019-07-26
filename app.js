@@ -2,12 +2,24 @@
 
 const express = require('express');
 const app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.locals.pretty = true;
 
 app.set('view engine', 'jade');
 app.set('views','./views');
 app.use(express.static('./public'));
+
+app.get('/form',(req, res) =>{
+    res.render('form');
+});
+
+app.post('/form_receiver',(req,res)=>{
+    var title = req.body.title;
+    var description = req.body.description;
+    res.send(title+','+description);
+});
 
 app.get('/template',function(req,res){
     res.render('temp',{'time':Date(),'_title':'Hello Jade'});
