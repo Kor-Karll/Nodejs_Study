@@ -16,17 +16,21 @@ app.get('/', (req,res)=>{
     res.send('Hello home page');
 });
 
-app.get('/topic',(req,res)=>{
-    var senddata_id = req.query.id
+app.get('/topic/:id/:mode',(req,res)=>{
+    res.send(req.params.id+','+req.params.mode);
+});
+
+app.get('/topic/:id',(req,res)=>{
+    var senddata_id = req.params.id
     var topics = [
         'Javascript is...',
         'Nodejs is...',
         'Express is...',
     ];
     var output = `
-        <a href='/topic?id=0'>Javascript</a><br>
-        <a href='/topic?id=1'>Nodejs</a><br>
-        <a href='/topic?id=2'>Express</a><br><br>
+        <a href='/topic/0'>Javascript</a><br>
+        <a href='/topic/1'>Nodejs</a><br>
+        <a href='/topic/2'>Express</a><br><br>
         ${senddata_id}
     `;
     
