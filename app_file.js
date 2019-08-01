@@ -22,7 +22,6 @@ app.get('/topic/new',(req,res)=>{
 });
 
 app.get(['/topic','/topic/:id'],(req,res)=>{
-    
     fs.readdir('data',(err,files)=>{
         if(err)
         {

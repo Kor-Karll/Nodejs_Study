@@ -23,7 +23,8 @@ app.post('/form_receiver',(req,res)=>{
 
 app.get('/template',function(req,res){
     res.render('temp',{'time':Date(),'_title':'Hello Jade'});
-})
+});
+
 app.get('/', (req,res)=>{
     res.send('Hello home page');
 });
