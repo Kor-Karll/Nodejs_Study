@@ -9,7 +9,7 @@
     "jade": "^1.11.0",
     "supervisor": "^0.12.0",
     "uglify-js": "^3.6.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {},
   "scripts": {
